@@ -6,7 +6,7 @@ class Solution:
             visited.add(room)
             for key in rooms[room]:
                 if key not in visited:
-                    aux(key)
+                    dfs(key)
         
         dfs(0)
         return len(visited) == len(rooms)
